@@ -12,6 +12,8 @@ Deep clone utlity function for JavaScript that is limited to basic data types:
 
 Minimizes to 279 bytes.
 
+Only works with modern bundlers that support the `module` entry point like Rollup, Webpack 2+.
+
 ## Installation
 
 ```bash

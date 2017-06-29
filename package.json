@@ -1,6 +1,6 @@
 {
   "name": "deep-clone-simple",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Tiny deep clone utility for simple data structures.",
   "module": "index.js",
   "repository": "https://github.com/balloob/deep-clone-simple",
