@@ -1,12 +1,20 @@
 # Deep clone simple
 
-Deep clone utlity function for JavaScript that only works with JSON friendly data types: Object, Array, number, boolean, `null`, string. As bonus also works with functions.
+Deep clone utlity function for JavaScript that is limited to basic data types:
+ - Objects `{ hello: 2 }`
+ - Array `[1, 2, 3]`
+ - Number `5.2`
+ - Boolean `true`
+ - String `"hello"`
+ - Date `new Date()`
+ - Functions `function bla() {}`
+ - `null`
 
-Minimizes to 203 bytes.
+Minimizes to 279 bytes.
 
 ## Installation
 
-```
+```bash
 yarn add deep-clone-simple
 ```
 
@@ -20,6 +28,7 @@ const copy = deepClone(someData);
 
 ## Run tests
 
-```
+```bash
+yarn test
 yarn test-watch
 ```

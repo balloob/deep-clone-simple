@@ -2,17 +2,18 @@
   "name": "deep-clone-simple",
   "version": "1.0.2",
   "description": "Tiny deep clone utility for simple data structures.",
-  "main": "index.js",
+  "module": "index.js",
   "repository": "https://github.com/balloob/deep-clone-simple",
   "author": "Paulus Schoutsen",
   "license": "Apache-2.0",
   "devDependencies": {
     "faucet": "^0.0.1",
+    "reify": "^0.11.24",
     "tape": "^4.7.0",
     "tape-watch": "^2.3.0"
   },
   "scripts": {
-    "test": "tape test.js | faucet",
-    "test-watch": "tape-watch test.js | faucet"
+    "test": "tape -r reify test.js | faucet",
+    "test-watch": "tape-watch -r reify test.js | faucet"
   }
 }
