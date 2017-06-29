@@ -9,8 +9,8 @@ module.exports = function deepcopy(value) {
   if (Array.isArray(value)) {
     return value.map(deepcopy);
   }
-  const result = {};
+  var result = {};
   Object.keys(value).forEach(
-    key => { result[key] = deepcopy(value[key]); });
+    function(key) { result[key] = deepcopy(value[key]); });
   return result;
 }
