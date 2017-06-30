@@ -1,7 +1,8 @@
 {
   "name": "deep-clone-simple",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tiny deep clone utility for simple data structures.",
+  "main": "index.cjs.js",
   "module": "index.js",
   "repository": "https://github.com/balloob/deep-clone-simple",
   "author": "Paulus Schoutsen",
@@ -9,10 +10,12 @@
   "devDependencies": {
     "faucet": "^0.0.1",
     "reify": "^0.11.24",
+    "rollup": "^0.43.0",
     "tape": "^4.7.0",
     "tape-watch": "^2.3.0"
   },
   "scripts": {
+    "gen-cjs": "rollup index.js -f cjs > index.cjs.js",
     "test": "tape -r reify test.js | faucet",
     "test-watch": "tape-watch -r reify test.js | faucet"
   }
